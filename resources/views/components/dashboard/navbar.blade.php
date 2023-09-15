@@ -4,8 +4,8 @@
         <div class="flex space-x-4">
             <a href="/about" class="text-white mt-2 text-2xl">About</a>
             @if (!Auth::check())
-            <a href="{{route('login')}}" class="text-white mt-2">Login</a>
-            <a href="{{route('register')}}" class="text-white mt-2">Register</a>
+            <a href="{{route('login')}}" class="text-white mt-2 text-2xl">Login</a>
+            <a href="{{route('register')}}" class="text-white mt-2 text-2xl">Register</a>
             @else
             <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center text-2xl dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
